@@ -46,7 +46,15 @@ body {
 #menu-icon:hover {
     opacity: 1;
 }
-
+/*styling the images for the task1*/
+#Bell img{
+    width: 20px;
+    border-radius: 50%
+}
+#DisplayPicture img{
+    width: 35px;
+    border-radius: 50%
+}
 /* #sign-in {
     padding: 8px 11px;
     background-color: #4285f4;
@@ -152,7 +160,7 @@ footer {
     opacity: 0.5;
     border-top: solid 1px #CCC;
 }
-
+/*putting the images into the flex container and implemented the hover functionality*/
 .row {
     display: flex;
     margin: 10px;
@@ -164,7 +172,10 @@ footer {
 .column:hover{
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
 }
-
+/*styling image under columns*/
+.column img{
+    width: 100px
+}
 
 footer li {
     display: inline;
