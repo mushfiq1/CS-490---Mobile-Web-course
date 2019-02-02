@@ -9,7 +9,7 @@
 
 <body>
 
-<h1>Rock Scissors Papers game </h1>
+<h1>Rock Scissors Papers</h1>
 <script>
 
 var userChoice = prompt("Do you choose rock, paper or scissors?");
@@ -28,26 +28,26 @@ var compare = function(choice1,choice2) {
 
     if (choice1 === choice2) {
 
-        return "The result is a tie!" + " " + "Lets play again." ;
+        return "Computer and you made same selection. It is a tie!" ;
     }
 
     else if (choice1 === "rock") {
 
         if (choice2 === "scissors") {
-            return "rock wins" + "<br>" + "You beat the computer, nice job!";
+            return "<br>" + "Computer chose <b>scissors</b>. Rock smashes scissor! You win:-)";
         }
         else {
-            return "paper wins" + "<br>" + "Your really smart computer beat you.";
+            return "<br>" + "Computer chose <b>paper</b>. Paper covers rock. You lose :-(";
         }
     }
 
     else if (choice1 === "paper") {
 
         if (choice2 === "rock") {
-            return "paper wins" + "<br>" + "You beat the computer, nice job!";
+            return "<br>" + "Computer chose <b>rock</b>. Paper covers rock. You win:-)";
         }
         else {
-            return "scissors wins" + "<br>" + "Your really smart computer beat you.";
+            return "<br>" + "Computer chose <b>scissor</b>. Scissor cuts paper. You lose :-(";
         }
 
     }
@@ -55,10 +55,10 @@ var compare = function(choice1,choice2) {
     else if (choice1 === "scissors") {
 
         if (choice2 === "rock") {
-            return "rock wins" + "<br>" + "Your really smart computer beat you.";
+            return  "<br>" + "Computer chose <b>rock</b>. Rock smashes scissor! You lose :-(";
         }
         else {
-            return "scissors win" + "<br>" + "You beat the computer, nice job!";
+            return "<br>" + "Computer chose <b>paper</b>. Scissors cut paper! You win :-)";
         }
     }
 
@@ -66,8 +66,9 @@ var compare = function(choice1,choice2) {
     } //closes compare function
 
 
-   document.write("Computer chose: " + computerChoice + "<br>");
+   document.write("You chose: " + "<b>" + userChoice + "</b>"  + "<br>");
    document.write(compare(userChoice,computerChoice));
+   document.write( "<br>" + "<br>" + "Good Game! ");
 
 </script>
 
