@@ -11,10 +11,13 @@
 
 <h1>Rock Scissors Papers</h1>
 <script>
-
+//setting variable for user selection
 var userChoice = prompt("Do you choose rock, paper or scissors?");
 
+//setting variable where computer will call the math.random function to generate a float value between 0 and 1
 var computerChoice = Math.random();
+
+//implementing if else if else statement
   if (computerChoice < 0.34) {
 	computerChoice = "rock";
   } else if(computerChoice <= 0.67) {
@@ -22,8 +25,7 @@ var computerChoice = Math.random();
   } else {
 	computerChoice = "scissors";
   }
-  //console.log("Computer chooses: " + computerChoice);
-
+// setting a variable where a function is defined to compare user selection vs computer selection as function parameters
 var compare = function(choice1,choice2) {
 
     if (choice1 === choice2) {
@@ -66,8 +68,11 @@ var compare = function(choice1,choice2) {
     } //closes compare function
 
 
-   document.write("You chose: " + "<b>" + userChoice + "</b>"  + "<br>");
-   document.write(compare(userChoice,computerChoice));
+   document.write("You chose: " + "<b>" + userChoice + "</b>"  + "<br>");//this outputs out to the screen the selection user made
+
+    //the compare function is called here where user selection & computer choice is passed as parameters
+    document.write(compare(userChoice,computerChoice));
+
    document.write( "<br>" + "<br>" + "Good Game! ");
 
 </script>
